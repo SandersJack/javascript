@@ -1,0 +1,11 @@
+#container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+}
+
+.pixel {
+    border: 1px solid gray;
+    min-width: 20px;
+    min-height: 20px;
+}
+
