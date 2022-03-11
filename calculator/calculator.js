@@ -72,13 +72,13 @@ buttons.forEach((button) => {
         
         if (id == '=') {
             for (let i =0 ; i<input.length; i++) {
-                if (stringContainsNumber(input[i]) && op =='op' && equal == 0) {
+                if ((stringContainsNumber(input[i]) || input[i] == '.' ) && op =='op' && equal == 0) {
                     num1 += input[i];
                 } 
                 if (input[i] == '+' || input[i] == 'x' || input[i] == '/' || input[i] == '-') {
                     op = input[i];
                 }
-                if (stringContainsNumber(input[i]) && op !='op') {
+                if ((stringContainsNumber(input[i]) || input[i] == '.' ) && op !='op') {
                     num2 += input[i];
                 }
                 if (input[i] == '=') {
