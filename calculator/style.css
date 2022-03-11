@@ -1,0 +1,17 @@
+#screen {
+    min-width: 80px;
+    min-height: 40px;
+    background-color: grey;
+    font-size: 18pt;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.pixel {
+    border: 1px solid gray;
+    min-width: 20px;
+    min-height: 40px;
+}
